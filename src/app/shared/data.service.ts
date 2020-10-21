@@ -9,7 +9,6 @@ import {Observable} from 'rxjs';
 export class DataService {
   public API = "https://swapi.dev/api/people";
   constructor( private httpClient: HttpClient) { 
-    console.log(DataService);
   }
 
   getAll():Observable<any>{

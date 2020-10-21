@@ -8,11 +8,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MaterialModule} from './material.module';
 import { PeliculaComponent } from './pelicula/pelicula.component';
 import { MatTableModule } from '@angular/material/table';
+import {MatListModule} from '@angular/material/list'; 
+import {PersonajeComponent} from './personaje/personaje.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     PeliculaComponent,
+    PersonajeComponent
   ],
   imports: [
     BrowserModule,
@@ -20,7 +23,8 @@ import { MatTableModule } from '@angular/material/table';
     HttpClientModule,
     BrowserAnimationsModule,
     MaterialModule,
-    MatTableModule
+    MatTableModule,
+    MatListModule
   ],  
   providers: [],
   bootstrap: [AppComponent]
